@@ -154,7 +154,7 @@ core unix frozen debug build:
     expire_in: 1 week
 
 core unix frozen debug build arm:
-  image: vdovhanych/nixos
+  image: nixos/nix:latest-arm64
   stage: build
   <<: *gitlab_caching
   needs: []
@@ -318,7 +318,7 @@ legacy emu regular debug build:
     expire_in: 1 week
 
 legacy emu regular debug build arm:
-  image: vdovhanych/nixos
+  image: nixos/nix:latest-arm64
   stage: build
   <<: *gitlab_caching
   needs: []
